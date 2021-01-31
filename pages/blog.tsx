@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import matter from 'gray-matter';
-import { BlogPreview, Box, HeroText, Input, IntroText, NewsletterSignup, Text } from 'components';
+import { BlogPreview, Box, HeroText, Input, IntroText, Text } from 'components';
 import { getAllPostsSlug, getSinglePostData } from '../lib/getBlogPosts';
 
 type PostData = {
@@ -74,21 +74,18 @@ export const Blog: FC<BlogProps> = ({ postData }) => {
       {/* <Text as="h1" fontSize={[36, 6]} fontWeight={700} lineHeight={1.2} mb={10}>
       Blog
     </Text> */}
-      <h1>
-        <HeroText fontSize={[150, 200]}>Blog</HeroText>
-      </h1>
+      <h1>Мой блог</h1>
       <Text my={3}>
-        I'm writing mostly about web development, tech news, and the occasional life wisdom. Use the search below to filter by title.
+        В основном я пишу про Minecraft-сервера, хостинги и прочее. Воспользуйтесь строкой ниже для поиска среди опубликованных статей.
       </Text>
       <Box mb={5}>
-        <Input placeholder="Search Articles" icon={<FiSearch />} onChange={search} />
+        <Input placeholder="Поиск материалов" icon={<FiSearch />} onChange={search} />
       </Box>
 
-      <h2>Recent Posts</h2>
+      <h2>Последние посты</h2>
       {filteredPostData.map(({ slug, frontMatter: { title, excerpt } }) => (
         <BlogPreview key={slug} slug={slug} title={title} excerpt={excerpt} />
       ))}
-      <NewsletterSignup />
     </>
   );
 };

@@ -36,7 +36,7 @@ export const Footer: FC<FooterProps> = ({ socialNav, footerNav }) => {
           ) : null}
           <div>
             <Text as="small" d="block" mt={4} fontSize={0} color="--color-text">
-              {`© ${new Date().getFullYear()} FelixTellmann.com - All rights reserved.`}
+              {`© ${new Date().getFullYear()} alexeylesin.ru - Все права защищены.`}
             </Text>
           </div>
         </footer>

@@ -3,7 +3,8 @@ import { DefaultSeo } from "next-seo";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { createContext, FC } from "react";
-import { FiFacebook, FiGithub, FiMail, FiTwitter } from "react-icons/fi";
+import { FaVk } from "react-icons/fa";
+import { FiFacebook, FiGithub, FiMail, FiTrello, FiTwitter, FiYoutube } from "react-icons/fi";
 import "reset-css/sass/_reset.scss";
 import { prism, typography, variables } from "styles";
 import "styles/mdx.scss";
@@ -56,19 +57,19 @@ export const Root: FC<AppProps> = ({ pageProps, Component }) => {
       `}</style>
       
       <DefaultSeo
-        title="Felix Tellmann - Front-end Engineer"
-        description="Creator of things that live on the internet - Web developer, writer and entrepreneur."
+        title="Алексей Лесин"
+        description="Занимаюсь созданием Minecraft-серверов и некоторыми другими проектами."
         openGraph={{
           type: "website",
           locale: "en_IE",
-          url: "https://www.felixtellmann.com/",
-          site_name: "Felix Tellmann",
-          title: "Felix Tellmann - Front-end Engineer",
-          description: "Creator of things that live on the internet - Web developer, writer and entrepreneur.",
+          url: "https://alexeylesin.ru/",
+          site_name: "Алексей Лесин",
+          title: "Алексей Лесин",
+          description: "Занимаюсь созданием Minecraft-серверов и некоторыми другими проектами.",
           images: [
             {
-              url: "https://www.felixtellmann.com/images/og-default.jpg",
-              alt: "Felix Tellmann - Front-end Engineer",
+              url: "https://www.alexeylesin.ru/images/og-default.jpg",
+              alt: "Алексей Лесин",
               width: 1200,
               height: 630
             }
@@ -79,7 +80,7 @@ export const Root: FC<AppProps> = ({ pageProps, Component }) => {
           site: "@FelixTellmann",
           cardType: "summary_large_image"
         }}
-        canonical={`https://www.felixtellmann.com/${router.pathname}`}
+        canonical={`https://www.alexeylesin.ru/${router.pathname}`}
       />
       
       <BreakpointProvider breakPoints={[0, 600, 900, 1200]}>
@@ -95,24 +96,20 @@ export const Root: FC<AppProps> = ({ pageProps, Component }) => {
                <BorderFrame loading={false} duration={3} width="5px" />
                <Header
                  logo={{
-                   title: "FT",
+                   title: "AL",
                    href: "/"
                  }}
                  nav={[
                    {
-                     title: "Home",
+                     title: "Главная",
                      href: "/"
                    },
                    {
-                     title: "Blog",
+                     title: "Блог",
                      href: "/blog"
                    },
                    {
-                     title: "Learn",
-                     href: "/learn"
-                   },
-                   {
-                     title: "About",
+                     title: "Обо мне",
                      href: "/about"
                    }
                  ]}
@@ -132,29 +129,29 @@ export const Root: FC<AppProps> = ({ pageProps, Component }) => {
                          }}
                        />
                      ),
-                     href: "https://github.com/FelixTellmann",
+                     href: "https://github.com/alexeylesin",
                      target: "_blank"
                    },
                    {
                      title: (
-                       <FiFacebook
+                       <FiYoutube
                          style={{
                            stroke: "url(#gradient) currentColor"
                          }}
                        />
                      ),
-                     href: "https://www.facebook.com/felixtellmann",
+                     href: "https://youtube.com/c/alexeylesin",
                      target: "_blank"
                    },
                    {
                      title: (
-                       <FiTwitter
+                       <FiTrello
                          style={{
                            stroke: "url(#gradient) currentColor"
                          }}
                        />
                      ),
-                     href: "https://twitter.com/FelixTellmann",
+                     href: "https://tasks.rangemc.ovh/",
                      target: "_blank"
                    },
                    {
@@ -165,19 +162,20 @@ export const Root: FC<AppProps> = ({ pageProps, Component }) => {
                          }}
                        />
                      ),
-                     href: "mailto:hi@felixtellmann.com",
+                     href: "mailto:me@alexeylesin.ru",
                      target: "_blank"
                    }
                  ]}
                  footerNav={[
                    {
-                     title: "visit-my-old-site",
-                     href: "https://old-tellmann-site.vercel.app/webdesign.html",
+                     title: "Старая версия сайта",
+                     href: "https://old.alexeylesin.ru",
                      target: "_blank"
                    },
                    {
-                     title: "learn-in-public",
-                     href: "/learn"
+                     title: "RangeMC",
+                     href: "https://rangemc.ovh",
+                     target: "_blank"
                    }
                    /* { title: '/uses', href: '/uses' },
                                          { title: '/photos', href: '/photos' },

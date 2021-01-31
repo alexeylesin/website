@@ -20,7 +20,6 @@ export * from "./IntroText";
 export * from "./Link";
 export * from "./LinkBlock";
 export * from "./BorderFrame";
-export * from "./NewsletterSignup";
 export * from "./ProsCons";
 export * from "./Responsive";
 export * from "./Text";

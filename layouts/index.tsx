@@ -1,5 +1,5 @@
 import * as components from "components";
-import { ArticleHeading, ArticleSidebar, Headings, NewsletterSignup } from "components";
+import { ArticleHeading, ArticleSidebar, Headings } from "components";
 import hydrate from "next-mdx-remote/hydrate";
 import { ArticleJsonLd, NextSeo } from "next-seo";
 import { useRouter } from "next/router";
@@ -30,9 +30,9 @@ type LayoutProps = {
 
 export const Layout: FC<LayoutProps> = ({ children, slug, frontMatter: { title, author = "", authorAvatarUrl, publishedAt = Date.now().toString(), views, readingTime, excerpt, image, headings, showHeadings = 0, showHeadingsExpanded = false } }) => {
   const router = useRouter();
-  let canonical = `https://felixtellmann.com/blog/${slug}`;
+  let canonical = `https://alexeylesin.ru/blog/${slug}`;
   if (!slug) {
-    canonical = `https://felixtellmann.com${router.pathname}`;
+    canonical = `https://alexeylesin.ru${router.pathname}`;
   }
   
    const content = process.env.NODE_ENV === 'production' ? hydrate(children, { components }) : children;
@@ -41,7 +41,7 @@ export const Layout: FC<LayoutProps> = ({ children, slug, frontMatter: { title, 
       <>
         <>
           <NextSeo
-              title={`${title} – Felix Tellmann`}
+              title={`${title} – Алексей Лесин`}
               description={excerpt}
               canonical={canonical}
               openGraph={{
@@ -54,20 +54,20 @@ export const Layout: FC<LayoutProps> = ({ children, slug, frontMatter: { title, 
                 description: excerpt,
                 images: [
                   {
-                    url: `https://felixtellmann.com${image}`,
+                    url: `https://alexeylesin.ru${image}`,
                     alt: title
                   }
                 ]
               }}
           />
           <ArticleJsonLd
-              authorName="Felix Tellmann"
+              authorName="Алексей Лесин"
               dateModified={new Date(publishedAt).toISOString()}
               datePublished={new Date(publishedAt).toISOString()}
               description={excerpt}
-              images={[`https://felixtellmann.com${image}`]}
+              images={[`https://alexeylesin.ru${image}`]}
               publisherLogo="/favicons/android-icon-192x192.png"
-              publisherName="Felix Tellmann"
+              publisherName="Алексей Лесин"
               title={title}
               url={canonical}
           />
@@ -90,9 +90,7 @@ export const Layout: FC<LayoutProps> = ({ children, slug, frontMatter: { title, 
         {showHeadings > 0 && headings ? (
             <ArticleSidebar showHeadings={showHeadings} headings={headings} showHeadingsExpanded={showHeadingsExpanded} />
         ) : null}
-        
-        {/*= =============== NEWSLETTER SIGNUP ================ */}
-        <NewsletterSignup />
+      
         <style jsx global>{`
           code {
             padding: 0.1rem 0.6rem;

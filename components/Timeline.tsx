@@ -41,8 +41,8 @@ export const Timeline: FC<TimelineProps> = ({ heading, data, preview }) => {
                    fontSize={1}
                    fontWeight={600}>
            {fullTimeline
-            ? <> Show less &nbsp;&nbsp;<FiChevronUp /></>
-            : <> Show more &nbsp;&nbsp;<FiChevronDown /></>
+            ? <> Показать меньше &nbsp;&nbsp;<FiChevronUp /></>
+            : <> Показать больше &nbsp;&nbsp;<FiChevronDown /></>
            }
          </Button>
          : null}

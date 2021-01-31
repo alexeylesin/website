@@ -1,48 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://felixtellmann.com/about</loc>
+    <loc>https://alexeylesin.ru/about</loc>
   </url>  
   <url>
-    <loc>https://felixtellmann.com/blog</loc>
+    <loc>https://alexeylesin.ru/blog</loc>
   </url>  
   <url>
-    <loc>https://felixtellmann.com</loc>
-  </url>  
+    <loc>https://alexeylesin.ru</loc>
+  </url>
   <url>
-    <loc>https://felixtellmann.com/learn</loc>
-  </url>  
-  <url>
-    <loc>https://felixtellmann.com/newsletter</loc>
-  </url>  
-  <url>
-    <loc>https://felixtellmann.com/photos</loc>
-  </url>  
-  <url>
-    <loc>https://felixtellmann.com/uses</loc>
-  </url>  
-  <url>
-    <loc>https://felixtellmann.com/blog/color-themes-with-react</loc>
-  </url>  
-  <url>
-    <loc>https://felixtellmann.com/blog/useCallback-typescript</loc>
-  </url>  
-  <url>
-    <loc>https://felixtellmann.com/blog/useContext-typescript</loc>
-  </url>  
-  <url>
-    <loc>https://felixtellmann.com/blog/useEffect-typescript</loc>
-  </url>  
-  <url>
-    <loc>https://felixtellmann.com/blog/useState-typescript</loc>
-  </url>  
-  <url>
-    <loc>https://felixtellmann.com/examples/useEffect-typescript-1</loc>
-  </url>  
-  <url>
-    <loc>https://felixtellmann.com/examples/useState-typescript-1</loc>
-  </url>  
-  <url>
-    <loc>https://felixtellmann.com/examples/useState-typescript-2</loc>
+    <loc>https://alexeylesin.ru/blog/hostings</loc>
   </url>  
 </urlset>
