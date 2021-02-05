@@ -9,3 +9,5 @@ node_modules
 **/public/sw.js*
 **/public/service-worker.js*
 .vercel
+
+.vercel

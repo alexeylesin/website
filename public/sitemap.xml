@@ -8,8 +8,26 @@
   </url>  
   <url>
     <loc>https://alexeylesin.ru</loc>
-  </url>
+  </url>  
+  <url>
+    <loc>https://alexeylesin.ru/newsletter</loc>
+  </url>  
+  <url>
+    <loc>https://alexeylesin.ru/photos</loc>
+  </url>  
+  <url>
+    <loc>https://alexeylesin.ru/uses</loc>
+  </url>  
   <url>
     <loc>https://alexeylesin.ru/blog/hostings</loc>
+  </url>  
+  <url>
+    <loc>https://alexeylesin.ru/examples/useEffect-typescript-1</loc>
+  </url>  
+  <url>
+    <loc>https://alexeylesin.ru/examples/useState-typescript-1</loc>
+  </url>  
+  <url>
+    <loc>https://alexeylesin.ru/examples/useState-typescript-2</loc>
   </url>  
 </urlset>
