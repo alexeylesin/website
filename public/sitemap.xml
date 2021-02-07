@@ -19,9 +19,6 @@
     <loc>https://alexeylesin.ru/uses</loc>
   </url>  
   <url>
-    <loc>https://alexeylesin.ru/blog/hostings</loc>
-  </url>  
-  <url>
     <loc>https://alexeylesin.ru/examples/useEffect-typescript-1</loc>
   </url>  
   <url>
@@ -29,5 +26,8 @@
   </url>  
   <url>
     <loc>https://alexeylesin.ru/examples/useState-typescript-2</loc>
+  </url>  
+  <url>
+    <loc>https://alexeylesin.ru/blog/hostings</loc>
   </url>  
 </urlset>

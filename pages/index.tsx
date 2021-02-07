@@ -2,7 +2,7 @@ import { BlogPreview, Card, HeroText, Hr, LinkBlock, Responsive, Timeline } from
 import matter from "gray-matter";
 import { FC } from "react";
 import { FaFacebook, FaRegShareSquare, FaShare, FaStickyNote } from "react-icons/fa";
-import { FiHexagon, FiUploadCloud } from "react-icons/fi";
+import { FiCheck, FiHexagon, FiPenTool, FiSettings, FiUploadCloud } from "react-icons/fi";
 import { HiOutlineColorSwatch } from "react-icons/hi";
 import { getAllPostsSlug, getSinglePostData } from "../lib/getBlogPosts";
 import { BlogProps } from "./blog";
@@ -99,6 +99,19 @@ export const Index: FC<BlogProps> = ({ postData }) => {
         
         {/*= =============== PROJECTS ================ */}
         <h2>Проекты</h2>
+        <LinkBlock href="https://tools.alexeylesin.ru" target="_blank">
+          <Card
+              icon={<FiSettings />}
+              title="LesinTools"
+              description={
+                <>
+                  Сервис с полезными инструментами для Minecraft серверов. Защищён от DDoS-атак
+                   и использует CDN для обеспечения максимально низкого пинга.
+                </>
+              }
+              hover
+          />
+        </LinkBlock>
         <LinkBlock href="https://send.alexeylesin.ru" target="_blank">
           <Card
               icon={<FiUploadCloud />}
